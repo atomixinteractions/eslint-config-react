@@ -1,0 +1,49 @@
+{
+  "name": "eslint-config-atomix-react",
+  "version": "1.0.0",
+  "description": "ESLint config for React",
+  "main": ".eslintrc",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "config": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomixinteractions/eslint-config-react.git"
+  },
+  "keywords": [
+    "style",
+    "guide",
+    "lint",
+    "rules",
+    "config",
+    "es6",
+    "es2015",
+    "javascript"
+  ],
+  "author": "Atomix Interactions Ltd.",
+  "maintainers": [
+    "Sergey Sova <i.am@lestad.net> (https://lestad.top)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atomixinteractions/eslint-config-react/issues"
+  },
+  "homepage": "https://github.com/atomixinteractions/eslint-config-react",
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  },
+  "peerDependencies": {
+    "eslint": "3.*.*"
+  },
+  "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-atomix-base": "^2.0.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.1.0"
+  }
+}
