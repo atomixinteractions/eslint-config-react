@@ -1,6 +1,7 @@
 import React, { Component, PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
+
 const Button = ({ children, onClick }) => (
   <div role="button" focusable onClick={onClick}>
     {children}
