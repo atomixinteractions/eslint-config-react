@@ -36,7 +36,6 @@ module.exports = {
       ignore: ['classes', 'theme', 'sheet', 'sheets'],
     }],
 
-
     'jsx-a11y/interactive-supports-focus': 'off',
     'jsx-a11y/href-no-hash': 'off'
   },
