@@ -42,6 +42,10 @@ class Example extends PureComponent {
     onUpdate: PropTypes.func,
   }
 
+  static defaultProps = {
+    onUpdate: null,
+  }
+
   resolveUpdate = (event) => {
     if (this.props.onUpdate) {
       this.props.onUpdate(event.target)
