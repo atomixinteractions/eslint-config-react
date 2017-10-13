@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 
 const Button = ({ children, onClick }) => (
-  <div role="button" focusable onClick={onClick}>
+  <div role="button" onClick={onClick} focusable>
     {children}
   </div>
 )

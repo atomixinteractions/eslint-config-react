@@ -2,7 +2,7 @@ module.exports = {
   parser: 'babel-eslint',
   extends: [
     'airbnb',
-    'eslint-config-atomix-base',
+    'atomix-base',
   ],
   plugins: [
     'import',
@@ -18,18 +18,19 @@ module.exports = {
   rules: {
     'strict': 'off',
     'no-unused-vars': ['warn', { varsIgnorePattern: 'React', ignoreRestSiblings: false }],
-    'import/no-extraneous-dependencies': 'off',
-    "class-methods-use-this": ["warn", { exceptMethods: [
-      "componentDidCatch",
-      "componentDidMount",
-      "componentDidUpdate",
-      "componentWillMount",
-      "componentWillReceiveProps",
-      "componentWillUnmount",
-      "componentWillUpdate",
-      "render",
-      "shouldComponentUpdate",
+    'class-methods-use-this': ['warn', { exceptMethods: [
+      'componentDidCatch',
+      'componentDidMount',
+      'componentDidUpdate',
+      'componentWillMount',
+      'componentWillReceiveProps',
+      'componentWillUnmount',
+      'componentWillUpdate',
+      'render',
+      'shouldComponentUpdate',
     ]}],
+
+    'import/no-extraneous-dependencies': 'off',
 
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
     'react/prop-types': ['warn', {
@@ -37,6 +38,7 @@ module.exports = {
     }],
 
     'jsx-a11y/interactive-supports-focus': 'off',
-    'jsx-a11y/href-no-hash': 'off'
+    'jsx-a11y/href-no-hash': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
   },
 }
