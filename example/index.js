@@ -2,20 +2,30 @@ import React, { Component, PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
 
-const Button = ({ children, onClick }) => (
+function testFunction(
+  firstLongArgument,
+  exactlySecondLongArgument,
+  isThatThirdArgument,
+) {
+  return PropTypes.instanceOf(isThatThirdArgument)
+}
+
+const Button = ({ children, onClick, demo }) => (
   <div role="button" onClick={onClick} focusable>
-    {children}
+    {children} x {demo}
   </div>
 )
 
 Button.propTypes = {
   children: PropTypes.node,
   onClick: PropTypes.func,
+  demo: testFunction(undefined, 'last', Number),
 }
 
 Button.defaultProps = {
   children: null,
   onClick: null,
+  demo: Number(1),
 }
 
 class Page extends Component {
