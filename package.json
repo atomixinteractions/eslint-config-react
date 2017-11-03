@@ -33,16 +33,16 @@
   },
   "homepage": "https://github.com/atomixinteractions/eslint-config-react",
   "devDependencies": {
-    "eslint": "^4.9.0"
+    "eslint": "^4.10.0"
   },
   "peerDependencies": {
     "eslint": "4.*.*"
   },
   "dependencies": {
     "babel-eslint": "^8.0.1",
-    "eslint-config-airbnb": "^16.0.0",
-    "eslint-config-atomix-base": "^4.3.2",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-atomix-base": "^4.6.0",
+    "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.3.0"
   }
